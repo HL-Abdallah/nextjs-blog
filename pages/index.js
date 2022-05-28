@@ -1,16 +1,20 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>local dev</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Read the{" "}
+          <Link href="/posts/first-post">
+            <a>first post</a>
+          </Link>
         </h1>
 
         <p className="description">
